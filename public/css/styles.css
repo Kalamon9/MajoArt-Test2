@@ -1,0 +1,275 @@
+/* font-family: 'Bitter', serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Zen Tokyo Zoo', cursive;*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dddddd;
+  font-family: 'Bitter', serif;
+}
+
+h1 {
+  font-family: 'Fredericka the Great';
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/*             Navbar Section             */
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 2% 15%;
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.nav-links li {
+  padding: 15px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+}
+
+.nav-links .nav-link:hover {
+  color: #b41758;
+  }
+
+.langIcon:hover {
+  transform: rotateY(150deg)
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/*             Home Section             */
+#homeSection {
+  background-color: #fff;
+  padding: 14% 15% 7%;
+  height: 100vh;
+  background-image: url("../images/canva.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  border: 2px solid #555;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.home h1 {
+  padding: 3% 3% 1%;
+  font-family: 'Zen Tokyo Zoo';
+  font-size: 4.5rem;
+}
+
+.home p {
+  padding: 0 2% 3%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  color: #f2f2f2;
+}
+
+
+
+/*             About Section             */
+#aboutSection {
+  background-color: #fff;
+  padding: 7% 15%;
+}
+
+.about-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid grey;
+}
+
+.about-text {
+  flex: 50%;
+  padding: 3%;
+
+}
+
+.about-text p {
+  line-height: 1.7;
+  padding-bottom: 1.5%;
+}
+
+.about-img {
+  max-width: 370px;
+  max-height: 370px;
+  flex: 50%;
+  padding: 3%;
+}
+
+#faqSection {
+  background: linear-gradient(45deg, #ad7e1a, #b41758);
+  padding: 7% 15%;
+}
+#faqSection h3 {
+  /* text-transform: uppercase; */
+  font-weight: 400;
+  margin-top: 1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+
+/*             Contact Section             */
+#contactSection {
+  background-color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+  background-image: url("../images/splash.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.contact-subtitle{
+  font-weight: 400;
+  color: #b41758;
+   font-size: 2rem;
+  font-family: 'Fredericka the Great';
+}
+.address {
+  color: #555;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 1.5rem 0 2rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.contact-icons-div{
+
+}
+.contact-icons-div i {
+  font-size: 2.5rem;
+  padding: 5%;
+  color: #1e85ae;
+}
+.contact-icons-div i:hover{
+  color: #ad7e1a;
+}
+
+/*             Gallery Section             */
+#gallerySection {
+  background-color: #f2f2f2;
+  padding: 7% 15%;
+}
+
+#gallerySection img {
+  width: 100%;
+  height: auto;
+  padding: 5% 0;
+}
+
+/*             Footer Section             */
+footer {
+  background-color: #e6e6e6;
+  text-align: center;
+  width: 100%;
+  padding: 1%;
+}
+
+footer p {
+  color: #333;
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 1056px) {
+  .about-text, .about-img {
+    padding: 2% 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    height: 3rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    height: auto;
+    top: 3rem;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding-left: 15%;
+  }
+
+  .nav-link {
+    color: #f2f2f2;
+  }
+
+  .active {
+    display: block;
+  }
+
+  #homeSection {
+    background-image: url("../images/3.jpg");
+    padding: 20% 5% 5%;
+    height: 500px;
+  }
+
+  .home {
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  h1, .home h1 {
+    font-size: 2.5rem;
+  }
+
+  /* h1 {
+    font-size: 2.5rem;
+  } */
+}
