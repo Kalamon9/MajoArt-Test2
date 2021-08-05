@@ -220,9 +220,10 @@ footer p {
 
 @media only screen and (max-width: 1056px) {
   .about-text, .about-img {
-    padding: 1%;
+    padding: 2%;
     text-align: center;
     border: 0;
+    flex: 100%;
   }
 }
 
@@ -276,4 +277,9 @@ footer p {
 .about-div{
   border:0;
 }
+
+#faqSection{
+  padding: 7% 2%;
+}
+
 }
