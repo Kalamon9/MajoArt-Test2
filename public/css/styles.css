@@ -80,7 +80,7 @@ p {
   padding: 12% 10% 7%;
   height: 100vh;
   width: 100%;
-  background-image: url("../images/canva10op.png");
+  background-image: url("../images/canva.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -288,7 +288,7 @@ footer p {
   }
 
   #homeSection {
-    background-image: url("../images/2op10.jpg");
+    background-image: url("../images/2.jpg");
     padding: 20% 3% 5%;
     height: 500px;
   }
@@ -322,7 +322,7 @@ footer p {
 
 @media only screen and (max-width: 500px) {
   #homeSection {
-    background-image: url("../images/3op10.jpg");
+    background-image: url("../images/3.jpg");
   }
   .column {
     flex: 100%;
