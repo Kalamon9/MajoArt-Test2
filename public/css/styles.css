@@ -1,7 +1,6 @@
 /* font-family: 'Bitter', serif;
 font-family: 'Fredericka the Great', cursive;
 font-family: 'Zen Tokyo Zoo', cursive;*/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,14 +21,14 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.5;
 }
 
 /*             Navbar Section             */
 .nav-bar {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(64, 59, 69, 0.9);
   color: #f2f2f2;
   display: flex;
   justify-content: space-between;
@@ -59,14 +58,16 @@ p {
   text-decoration: none;
   color: #f2f2f2;
   letter-spacing: 2px;
+  font-size: 1.1rem;
 }
 
-.nav-links .nav-link:hover {
-  color: #b41758;
-  }
+.nav-link:hover {
+  color: #ad7e1a;
+}
 
 .langIcon:hover {
-  transform: rotateY(150deg)
+  transform: rotateY(150deg);
+  transition: 0.3s ease;
 }
 
 .hamburger {
@@ -76,10 +77,10 @@ p {
 
 /*             Home Section             */
 #homeSection {
-  background-color: #fff;
-  padding: 14% 15% 7%;
+  padding: 12% 10% 7%;
   height: 100vh;
-  background-image: url("../images/canva.png");
+  width: 100%;
+  background-image: url("../images/canva10op.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,7 +89,8 @@ p {
 .home {
   width: 80%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5%;
+  background-color: rgba(64, 59, 69, 0.9);
   color: #fff;
   text-align: center;
   border: 2px solid #555;
@@ -96,7 +98,7 @@ p {
 }
 
 .home h1 {
-  padding: 3% 3% 1%;
+  /* padding: 5% 0 1%; */
   font-family: 'Zen Tokyo Zoo';
   font-size: 4.5rem;
 }
@@ -109,8 +111,6 @@ p {
   line-height: 1.2;
   color: #f2f2f2;
 }
-
-
 
 /*             About Section             */
 #aboutSection {
@@ -129,7 +129,6 @@ p {
 .about-text {
   flex: 50%;
   padding: 3%;
-
 }
 
 .about-text p {
@@ -145,9 +144,11 @@ p {
 }
 
 #faqSection {
-  background: linear-gradient(45deg, #ad7e1a, #b41758);
-  padding: 7% 15%;
+  background: linear-gradient(45deg, #697e80, #b16835);
+  padding: 7% 21%;
+  color: #e6e6e6;
 }
+
 #faqSection h3 {
   /* text-transform: uppercase; */
   font-weight: 400;
@@ -155,59 +156,88 @@ p {
   padding-bottom: 0.75rem;
 }
 
+#faqSection p {
+  font-size: 1rem;
+}
 
 /*             Contact Section             */
 #contactSection {
   background-color: #fff;
-  padding: 7% 15%;
+  padding: 7% 10% 3%;
   text-align: center;
   background-image: url("../images/splash.jpg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.contact-subtitle{
-  font-weight: 400;
-  color: #b41758;
-   font-size: 2rem;
-  font-family: 'Fredericka the Great';
+
+.contact-subtitle {
+  font-weight: 300;
+  color: #701f16;
+  font-size: 2rem;
+  margin-top: 2rem;
+  /* font-family: 'Fredericka the Great'; */
 }
+
 .address {
   color: #555;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 300;
   margin: 1.5rem 0 2rem;
   font-style: normal;
   line-height: 1.5;
 }
 
-.contact-icons-div{
-text-align: center;
+.contact-icons-div {
+  text-align: center;
 }
+
 .contact-icons-div i {
   font-size: 2.5rem;
-  padding: 5%;
-  color: #1e85ae;
+  padding: 1% 3% 2%;
+  color: #697e80;
 }
-.contact-icons-div i:hover{
+
+.contact-icons-div i:hover {
   color: #ad7e1a;
 }
 
 /*             Gallery Section             */
 #gallerySection {
   background-color: #f2f2f2;
-  padding: 7% 15%;
+  padding: 7% 0;
 }
 
 #gallerySection img {
   width: 100%;
   height: auto;
-  padding: 5% 0;
+}
+
+.MajoArt {
+  font-family: 'Zen Tokyo Zoo';
+  font-size: 3.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 /*             Footer Section             */
 footer {
-  background-color: #e6e6e6;
+  background-color: #e7e4e4;
   text-align: center;
   width: 100%;
   padding: 1%;
@@ -215,7 +245,7 @@ footer {
 
 footer p {
   color: #333;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 1056px) {
@@ -225,6 +255,7 @@ footer p {
     border: 0;
     flex: 100%;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -257,8 +288,8 @@ footer p {
   }
 
   #homeSection {
-    background-image: url("../images/3.jpg");
-    padding: 20% 5% 5%;
+    background-image: url("../images/2op10.jpg");
+    padding: 20% 3% 5%;
     height: 500px;
   }
 
@@ -271,15 +302,30 @@ footer p {
     font-size: 2.5rem;
   }
 
-#aboutSection{
-  padding: 7% 1%;
-}
-.about-div{
-  border:0;
+  #aboutSection {
+    padding: 7% 2%;
+  }
+
+  .about-div {
+    border: 0;
+  }
+
+  #faqSection {
+    padding: 7%;
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
-#faqSection{
-  padding: 7% 2%;
-}
-
+@media only screen and (max-width: 500px) {
+  #homeSection {
+    background-image: url("../images/3op10.jpg");
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
